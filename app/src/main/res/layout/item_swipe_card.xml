@@ -103,7 +103,8 @@
                             android:text="Tittle"
                             android:textColor="@color/colorTextTitle"
                             android:textSize="17dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:paddingBottom="2dp"/>
 
                         <CheckBox
                             android:id="@+id/swipeCardCheckBox"

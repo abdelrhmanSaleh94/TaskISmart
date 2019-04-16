@@ -135,44 +135,46 @@
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
-
-    <RelativeLayout
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorBackground"
         android:fitsSystemWindows="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-
-        <ProgressBar
-            android:id="@+id/mainProgress_bar"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="70dp"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            android:layout_height="wrap_content">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/mainRecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <ProgressBar
+                android:id="@+id/mainProgress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="70dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-        <Button
-            android:id="@+id/mainBtnShowDetails"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="160dp"
-            android:background="@drawable/round_corner_red"
-            android:fontFamily="sans-serif-light"
-            android:text="show details"
-            android:textColor="@color/colorBackground"
-            android:textStyle="bold"
-            android:layout_alignParentBottom="true"
-            android:visibility="gone"
-           />
-    </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mainRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/mainBtnShowDetails"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corner_red"
+        android:fontFamily="sans-serif-light"
+        android:text="show details"
+        android:textColor="@color/colorBackground"
+        android:textStyle="bold"
+        android:visibility="gone" />
 </android.support.design.widget.CoordinatorLayout>

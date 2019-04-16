@@ -92,7 +92,6 @@ public class RepoAdapter extends RecyclerView.Adapter<RepoAdapter.RepoViewHolder
         } );
         if (selected_position == position) {
             holder.swipeCardCheckBox.setChecked( true );
-
         } else {
             holder.swipeCardCheckBox.setChecked( false );
         }
