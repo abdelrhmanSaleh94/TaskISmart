@@ -85,7 +85,7 @@ public class RepoAdapter extends RecyclerView.Adapter<RepoAdapter.RepoViewHolder
                         repoList.get( position ).setNodeId( decs );
                         notifyDataSetChanged();
                         StyleableToast.makeText( context, "Update Repo ", R.style.Done ).show();
-
+                        dialog.dismiss();
                     }
                 } );
             }
