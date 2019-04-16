@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="MyAppBarLayoutTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+    <style name="delete">
+
+        <item name="colorBackground">#fc0419</item>
+        <item name="textColor">#fffefe</item>
+        <item name="iconLeft">@drawable/ic_delete</item>
+        <item name="length">LONG</item>
+    </style>
+
+    <style name="Done">
+
+        <item name="colorBackground">@color/colorGreenAccent3</item>
+        <item name="textColor">#fffefe</item>
+        <item name="iconLeft">@drawable/ic_don</item>
+        <item name="length">LONG</item>
+    </style>
+
+    <style name="Error">
+        <item name="colorBackground">#FF9800</item>
+        <item name="textColor">#fffefe</item>
+        <item name="iconLeft">@drawable/ic_warning</item>
+        <item name="length">LONG</item>
+    </style>
+
+</resources>
